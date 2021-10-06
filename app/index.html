@@ -4,104 +4,138 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-
-<div class="bg">
-    <div class="mobile-header">
-      <div class="mobile-container">
-            <div class="mobile-overlay"></div>
-            
-        <h1 class="logo"><a href="#"><img src="https://i.imgur.com/lduwiTu.png" alt="logo"></a></h1>
-        
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="material-icons-outlined">
+<main>
+<nav class="mobile-header">
+    <div class="mobile-container">
+        <div class="mobile-overlay"></div>
+        <h1 class="logo">
+            <a href="#"><img src="https://i.imgur.com/lduwiTu.png" alt="logo">
+            </a>
+        </h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="material-icons-outlined">
             menu
+        </span>
+    </button>
+    </div>
+</nav>
+<section class="pc-container px-3 px-md-0">
+    <div class="pc-menu">
+        <h2 class="menu-title title">Works</h2>
+        <ul class="flex-grow-1 ms-5 me-3">
+            <li>
+                <a href="#" class="list-link">
+                    <span class="material-icons-outlined">
+                        web
+                    </span>
+                Websites
+                </a>
+            </li>
+            <li>
+                <a href="#" class="list-link">
+                    <span class="material-icons-outlined">
+                    widgets
+                    </span>
+                Widgets
+                </a>
+            </li>
+        </ul>
+    <ul class="pb-5 ms-5">
+        <li>
+            <a href="#" class="list-link" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">About</a>
+        </li>
+        <li>
+            <a href="#" class="list-link" target="_blank">Resmue</a>
+        </li>
+        
+    </ul>
+    </div>
+    <div class="flex-grow-1 p-5">
+        <h2 class="title text-center text-md-start mb-2">Joy Cheng</h2>
+        <p class="subtitle text-center text-md-start">A developer with curious and patient</p>
+        <div class="card-container">
+            <ul class="card-list">
+                <li class="card">
+                    <div class="CTA-container">
+                        <a href="#" class="d-flex">
+                            <span class="material-icons-outlined card-icon">
+                                favorite_border
+                            </span>
+                        </a>
+                        <a href="#" class="d-flex">
+                            <span class="material-icons-outlined card-icon">
+                                share
+                            </span>
+                        </a>
+                    </div>
+                    <img class="card-img-top card-img" src="./assets/images/exhibinection.png" alt="website img">
+                    <div class="card-body" >
+                        <a href="http://exhibinection.joycheng.io/" class="card-title stretched-link" target="_blank">Exhibinection</a>
+                        <div class="card-subtitle">websites</div>
+                        <p class="card-content"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, provident.</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="CTA-container">
+                        <a href="#" class="d-flex">
+                            <span class="material-icons-outlined card-icon">
+                                favorite_border
+                            </span>
+                        </a>
+                        <a href="#" class="d-flex">
+                            <span class="material-icons-outlined card-icon">
+                                share
+                            </span>
+                        </a>
+                    </div>
+                    <img class="card-img-top card-img" src="./assets/images/doyoga.png" alt="website img">
+                    <div class="card-body" >
+                        <a href="http://doyoga.joycheng.io/" class="card-title stretched-link" target="_blank">Doyoga</a>
+                        <div class="card-subtitle">websites</div>
+                        <p class="card-content"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, provident.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="offcanvas offcanvas-top" data-aos-animation="fade" id="menu">
+    <div class="offcanvas-header pt-3 flex-row-reverse">
+        <button class="close-btn text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+            <span class="material-icons-outlined">
+            close
             </span>
         </button>
-      </div>
     </div>
-      <div class="bg-container">
-        <div class="pc-menu">
-          <h2 class="menu-title">Works</h2>
-          <ul class="work-list">
-            <li class="list-item">
-              <a href="#" class="list-link">
-                <span class="material-icons-outlined">
-                  web
-                  </span>Websites
-              </a>
-              </li>
-            <li class="list-item">
-              <a href="#" class="list-link">
-                <span class="material-icons-outlined">
-                widgets
-                </span>widgets
-              </a>
-              </li>
-          </ul>
-          <div class="menu-footer">
-            <ul class="about-list">
-              <li><a href="#" class="about" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">About Joy</a></li>
-              <li><a href="#" class="about">Resmue</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="main-content">
-            <h2 class="main-title">Joy Cheng</h2>
-      <p class="main-subtitle">A developer with curious and patient</p>
-          <div class="card-container">
-            <ul class="card-list">
-              <li class="card">
-                <div class="CTA-container">
-                  <a href="#" class="CTA-icon">
-                    <span class="material-icons-outlined">
-    favorite_border
-    </span>
-                  </a>
-                  <a href="#" class="CTA-icon">
-                    <span class="material-icons-outlined">
-    share
-    </span>
-                  </a>
-                </div>
-                <img class="card-img-top card-img" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1773&q=80" alt="website img">
-                <div class="card-body">
-                <a href="http://doyoga.joycheng.io/" class="card-title stretched-link" target="_blank">Exhibinection</a>
-                <div class="card-subtitle">websites</div>
-                <p class="card-content"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, provident.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </div>
-    </div>
-    
-     <div class="offcanvas offcanvas-top" data-aos-animation="fade" id="menu">
-          <div class="offcanvas-header">
-        <button class="close-btn text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><span class="material-icons-outlined">
-    close
-    </span></button>
-      </div>
-      <div class="offcanvas-body">
+    <div class="offcanvas-body">
         <div class="offcanvas-container">
-           <h2 class="offcanvas-title">About Me</h2>
-          <p class="about-content">A developer with curious and patient</p>
-          <h2 class="offcanvas-title">Works</h2>
-            <ul class="work-list-catagories">
-              <li><a href="#" class="list-link">websites</a></li>
-               <li><a href="#" class="list-link">widgets</a></li>
+            <h2 class="title text-center">About</h2>
+            <p class="text-center mb-3">A developer with curious and patient</p>
+            <div class="d-md-none">
+            <h2 class="title text-center mb-2">Works</h2>
+            <ul class="text-center">
+                <li><a href="#" class="list-link">websites</a></li>
+                <li><a href="#" class="list-link">widgets</a></li>
             </ul>
-          <h2 class="offcanvas-title">Contact</h2>
-          <ul class="contact-list-catagories">
-           <li><a href="#" mailto="joy.cheng97324@gmail"><span class="material-icons-outlined">
-    email
-    </span></a>  </li>
-           <li><a href="#" class="resume" title="Download the full Résumé" download><span class="material-icons-outlined">
-    file_download
-    </span></a> </li>
         </div>
-      </div>
-        <div class="offcanvas-footer">
-       
-      </div>
+        <h2 class="title text-center mt-2">Contact</h2>
+        <ul class="contact-list">
+            <li>
+                <a href="mailto:joy.cheng97324@gmail" data-bs-toggle="tooltip" data-bs-placement="top" title="Contact through Email" >
+                    <span class="material-icons-outlined">
+                        email
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="resume" data-bs-toggle="tooltip" data-bs-placement="top" title="Download the full Résumé" download>
+                    <span class="material-icons-outlined">
+                    file_download
+                    </span>
+                </a> 
+            </li>
     </div>
+    </div>
+</div>
+</main>
