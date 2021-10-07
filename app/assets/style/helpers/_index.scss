@@ -1,15 +1,23 @@
 .mobile-header{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 4;
     @include pad{
         display: none;
     }
+
 }
 .mobile-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+
 }
+
+
 .navbar-toggler{
     margin-right: .5rem;
     span{
@@ -60,6 +68,7 @@
 }
 
 
+
 .menu-title{
     margin-left: 3rem;
     margin-right: 6rem;
@@ -106,4 +115,11 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
+}
+
+.active{
+    a{
+        color: #2A2A2A;
+    }
+
 }

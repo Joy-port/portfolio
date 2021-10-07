@@ -94,27 +94,38 @@ function iconListEvents(){
 
 //分類按鈕功能
 function changeCategory(e){
- e.preventDefault();
+  e.preventDefault();
   if(e.target.nodeName !== "A"){
-   return ;
- };
- 
- let filterData = [];
- if(e.target.dataset.type === "all"){
-  console.log("click"); 
-  update(data);
   return ;
- }else if(e.target.dataset.type === "like"){
-  filterData = data.filter((item)=>{
-    return item.like === "selected";
-   });
- }else if(e.target.dataset.type!=="like" || e.target.dataset.type!=="all"){
-  filterData = data.filter((item)=>{
-    return e.target.dataset.type === item.type;
-   });
+  };
+  const categoryList = e.target.closest("UL").querySelectorAll("li");
+  categoryList.forEach(function(item){
+  item.setAttribute("class","");
+  });
+
+ let filterData = [];
+ const categoryType= e.target.dataset.type;
+
+ switch(categoryType){
+    case("all"):
+      e.target.closest("LI").classList.add('active');
+      update(data);
+      break;
+    case("like"):
+      e.target.closest("LI").classList.add('active');
+      filterData = data.filter((item)=>{
+      return item.like === "selected";
+      });
+      update(filterData);
+      break;
+    default:
+      e.target.closest("LI").classList.add('active');
+      filterData = data.filter((item)=>{
+        return e.target.dataset.type === item.type;
+        });
+      update(filterData);
+      break;
  };
- 
- update(filterData);
 
 }
 
@@ -130,23 +141,21 @@ function clickLikeBtn(e){
   data.forEach(function(item, index){
     e.preventDefault();
   
-    if(cardTitle === item.title){
-      if(item.like =="selected"){
-        item.icon = "favorite_border";
-        item.like = "";
-        item.likeNum -= 1;
-      }else{
-        item.like = "selected";
-        item.icon = "favorite";
-        item.likeNum += 1;
-      };
+  if(cardTitle === item.title){
+    if(item.like =="selected"){
+      item.icon = "favorite_border";
+      item.like = "";
+      item.likeNum -= 1;
+    }else{
+      item.like = "selected";
+      item.icon = "favorite";
+      item.likeNum += 1;
     };
+  };
 
-  });
-
+});
   update(data);
   console.log(data);
-
 
 }
 
@@ -154,8 +163,6 @@ function clickLikeBtn(e){
 function init(){
   update(data);
   categoryEvents();
-
-
 }
 
 init();
