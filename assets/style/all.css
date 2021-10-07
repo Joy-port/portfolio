@@ -304,4 +304,7 @@ input:focus, input:active {
 .active a {
   color: #2A2A2A; }
 
+.disabled {
+  pointer-events: none; }
+
 /*# sourceMappingURL=all.css.map */
