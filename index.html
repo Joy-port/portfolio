@@ -76,7 +76,7 @@
             <a href="#" class="list-link" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">About</a>
         </li>
         <li>
-            <a href="#" class="list-link" target="_blank">Resmue</a>
+            <a href="#" class="list-link" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Browse Joy's Résumé" download>Résumé</a>
         </li>
         
     </ul>
@@ -166,6 +166,9 @@
             <div class="d-md-none">
             <h2 class="title text-center mb-2">Works</h2>
             <ul class="text-center | js-category">
+                <li>
+                    <a href="#" class="list-link" data-type="all" data-bs-dismiss="offcanvas" aria-label="Close">all</a>
+                </li>
                 <li><a href="#" class="list-link" data-type="websites" data-bs-dismiss="offcanvas" aria-label="Close">websites</a></li>
                 <li><a href="#" class="list-link" data-type="widgets" data-bs-dismiss="offcanvas" aria-label="Close">widgets</a></li>
             </ul>
@@ -190,7 +193,15 @@
     </div>
 </div>
 </main>
-  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XSDVX576EL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XSDVX576EL');
+</script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="./assets/js/vendors.js"></script>
