@@ -61,7 +61,7 @@ current: index
             <a href="#" class="list-link" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">About</a>
         </li>
         <li>
-            <a href="#" class="list-link" target="_blank">Resmue</a>
+            <a href="#" class="list-link disabled" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Browse Joy's Résumé" download>Résumé</a>
         </li>
         
     </ul>
@@ -151,6 +151,9 @@ current: index
             <div class="d-md-none">
             <h2 class="title text-center mb-2">Works</h2>
             <ul class="text-center | js-category">
+                <li>
+                    <a href="#" class="list-link" data-type="all" data-bs-dismiss="offcanvas" aria-label="Close">all</a>
+                </li>
                 <li><a href="#" class="list-link" data-type="websites" data-bs-dismiss="offcanvas" aria-label="Close">websites</a></li>
                 <li><a href="#" class="list-link" data-type="widgets" data-bs-dismiss="offcanvas" aria-label="Close">widgets</a></li>
             </ul>
@@ -165,7 +168,7 @@ current: index
                 </a>
             </li>
             <li>
-                <a href="#" class="resume" data-bs-toggle="tooltip" data-bs-placement="top" title="Download the full Résumé" download>
+                <a href="#" class="resume disabled" data-bs-toggle="tooltip" data-bs-placement="top" title="Download the full Résumé" download>
                     <span class="material-icons-outlined">
                     file_download
                     </span>
