@@ -296,4 +296,7 @@ input:focus, input:active {
           justify-content: center;
   gap: 1rem; }
 
+.active {
+  color: #2A2A2A; }
+
 /*# sourceMappingURL=all.css.map */
