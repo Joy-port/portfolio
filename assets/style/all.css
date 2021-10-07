@@ -81,7 +81,7 @@ input:focus, input:active {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1.5rem; }
-  @media (min-width: 767px) {
+  @media (min-width: 576px) {
     .card-list {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -90,7 +90,7 @@ input:focus, input:active {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; } }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .card-list {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
@@ -104,11 +104,11 @@ input:focus, input:active {
   -webkit-box-shadow: 0 0 4px 2px rgba(81, 86, 229, 0.04);
           box-shadow: 0 0 4px 2px rgba(81, 86, 229, 0.04);
   border: 0px solid transparent;
-  width: 80%; }
-  @media (min-width: 767px) {
+  width: 100%; }
+  @media (min-width: 576px) {
     .card {
       width: 48%; } }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .card {
       width: 30%; } }
   .card img {
@@ -178,7 +178,7 @@ input:focus, input:active {
 .mobile-header {
   padding-top: 1rem;
   padding-bottom: 1rem; }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .mobile-header {
       display: none; } }
 
@@ -211,7 +211,7 @@ input:focus, input:active {
 
 .pc-container {
   height: 100vh; }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .pc-container {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -222,7 +222,7 @@ input:focus, input:active {
   -webkit-box-shadow: 0 0 5px 1px #f6f6f6;
           box-shadow: 0 0 5px 1px #f6f6f6;
   padding-top: 3rem; }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .pc-menu {
       display: -webkit-box;
       display: -ms-flexbox;
