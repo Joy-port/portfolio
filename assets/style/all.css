@@ -107,7 +107,7 @@ input:focus, input:active {
   width: 100%; }
   @media (min-width: 576px) {
     .card {
-      width: 48%; } }
+      width: 47%; } }
   @media (min-width: 768px) {
     .card {
       width: 30%; } }
@@ -148,8 +148,10 @@ input:focus, input:active {
   .card-icon:hover {
     color: #3498db; }
 
-.card-icon-selected {
+.selected {
   color: #FF6060; }
+  .selected:hover {
+    color: #FF6060; }
 
 .card-body {
   padding: 1.2rem; }
