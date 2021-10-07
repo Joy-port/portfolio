@@ -74,24 +74,37 @@ function changeCategory(e) {
   }
 
   ;
+  var categoryList = e.target.closest("UL").querySelectorAll("li");
+  categoryList.forEach(function (item) {
+    item.setAttribute("class", "");
+  });
   var filterData = [];
+  var categoryType = e.target.dataset.type;
 
-  if (e.target.dataset.type === "all") {
-    console.log("click");
-    update(data);
-    return;
-  } else if (e.target.dataset.type === "like") {
-    filterData = data.filter(function (item) {
-      return item.like === "selected";
-    });
-  } else if (e.target.dataset.type !== "like" || e.target.dataset.type !== "all") {
-    filterData = data.filter(function (item) {
-      return e.target.dataset.type === item.type;
-    });
+  switch (categoryType) {
+    case "all":
+      e.target.closest("LI").classList.add('active');
+      update(data);
+      break;
+
+    case "like":
+      e.target.closest("LI").classList.add('active');
+      filterData = data.filter(function (item) {
+        return item.like === "selected";
+      });
+      update(filterData);
+      break;
+
+    default:
+      e.target.closest("LI").classList.add('active');
+      filterData = data.filter(function (item) {
+        return e.target.dataset.type === item.type;
+      });
+      update(filterData);
+      break;
   }
 
   ;
-  update(filterData);
 } //愛心按鈕變色+加數量
 
 

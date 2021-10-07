@@ -108,9 +108,9 @@ input:focus, input:active {
   @media (min-width: 576px) {
     .card {
       width: 47%; } }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .card {
-      width: 30%; } }
+      width: 31%; } }
   .card img {
     height: 160px; }
   .card:hover {
@@ -178,8 +178,11 @@ input:focus, input:active {
      text-overflow: ellipsis; }
 
 .mobile-header {
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 4; }
   @media (min-width: 768px) {
     .mobile-header {
       display: none; } }
@@ -193,7 +196,9 @@ input:focus, input:active {
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  padding-top: 1rem;
+  padding-bottom: .5rem; }
 
 .navbar-toggler {
   margin-right: .5rem; }
@@ -296,7 +301,7 @@ input:focus, input:active {
           justify-content: center;
   gap: 1rem; }
 
-.active {
+.active a {
   color: #2A2A2A; }
 
 /*# sourceMappingURL=all.css.map */
