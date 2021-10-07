@@ -27,7 +27,7 @@
     width: 100%;
 
     @include mobile{
-        width: 48%;
+        width: 47%;
     }
     @include pad{
         width: 30%;
@@ -72,11 +72,16 @@
     &:hover{
         color:#3498db;
     }
+
+}
+.selected{
+    color: #FF6060;
+
+    &:hover{
+        color:#FF6060;
+    }
 }
 
-.card-icon-selected{
-    color: #FF6060;
-}
 .card-body{
     padding: 1.2rem;
 }

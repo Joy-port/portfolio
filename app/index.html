@@ -22,17 +22,33 @@ current: index
 <section class="pc-container px-3 px-md-0">
     <nav class="pc-menu">
         <h2 class="menu-title title">Works</h2>
-        <ul class="flex-grow-1 ms-5 me-3">
+        <ul class="flex-grow-1 ms-5 me-3 | js-category">
             <li>
-                <a href="#" class="list-link">
+                <a href="#" class="list-link" data-type="all">
                     <span class="material-icons-outlined">
-                        web
+                        home
                     </span>
-                Websites
+                    All
                 </a>
             </li>
             <li>
-                <a href="#" class="list-link">
+                <a href="#" class="list-link" data-type="like">
+                    <span class="material-icons-outlined">
+                        favorite_border
+                    </span>
+                    Favorites
+                </a>
+            </li>
+            <li>
+                <a href="#" class="list-link" data-type="websites">
+                    <span class="material-icons-outlined">
+                        web
+                    </span>
+                    Websites
+                </a>
+            </li>
+            <li>
+                <a href="#" class="list-link" data-type="widgets">
                     <span class="material-icons-outlined">
                     widgets
                     </span>
@@ -55,7 +71,7 @@ current: index
         <p class="subtitle text-center text-md-start">A developer with curious and patient</p>
         <div class="card-container">
             <ul class="card-list">
-                <li class="card">
+<!--                 <li class="card" data-aos="fade" data-aos-duration="800" data-type="websites">
                     <div class="CTA-container">
                         <a href="#" class="d-flex">
                             <span class="material-icons-outlined card-icon">
@@ -68,14 +84,14 @@ current: index
                             </span>
                         </a>
                     </div>
-                    <img class="card-img-top card-img" src="./assets/images/exhibinection.png" alt="website img">
+                    <img class="card-img-top card-img" src="./assets/images/exhibinection.png" alt="website img"  data-aos="fade" data-aos-duration="600" data-aos-delay="100">
                     <div class="card-body" >
                         <a href="http://exhibinection.joycheng.io/" class="card-title stretched-link" target="_blank">Exhibinection</a>
                         <div class="card-subtitle">websites</div>
                         <p class="card-content"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, provident.</p>
                     </div>
                 </li>
-                <li class="card">
+                <li class="card" data-aos="fade" data-aos-duration="800" data-type="websites">
                     <div class="CTA-container">
                         <a href="#" class="d-flex">
                             <span class="material-icons-outlined card-icon">
@@ -88,14 +104,14 @@ current: index
                             </span>
                         </a>
                     </div>
-                    <img class="card-img-top card-img" src="./assets/images/doyoga.png" alt="website img">
+                    <img class="card-img-top card-img" src="./assets/images/doyoga.png" alt="website img"  data-aos="fade" data-aos-duration="600" data-aos-delay="100">
                     <div class="card-body" >
                         <a href="http://doyoga.joycheng.io/" class="card-title stretched-link" target="_blank">Doyoga</a>
                         <div class="card-subtitle">websites</div>
                         <p class="card-content"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, provident.</p>
                     </div>
                 </li>
-                <li class="card">
+                <li class="card" data-aos="fade" data-aos-duration="800" data-type="widgets">
                     <div class="CTA-container">
                         <a href="#" class="d-flex">
                             <span class="material-icons-outlined card-icon">
@@ -108,13 +124,13 @@ current: index
                             </span>
                         </a>
                     </div>
-                    <img class="card-img-top card-img" src="./assets/images/todolist.gif" alt="website img">
+                    <img class="card-img-top card-img" src="./assets/images/todolist.gif" alt="website img" data-aos="fade" data-aos-duration="600" data-aos-delay="100">
                     <div class="card-body" >
-                        <a href="https://todolist.joycheng.io/" class="card-title stretched-link" target="_blank">todolist</a>
+                        <a href="https://todolist.joycheng.io/" class="card-title stretched-link" target="_blank">Todolist</a>
                         <div class="card-subtitle">widgets</div>
                         <p class="card-content"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, provident.</p>
                     </div>
-                </li>
+                </li> -->
             </ul>
         </div>
     </div>
@@ -134,9 +150,9 @@ current: index
             <p class="text-center mb-3">A developer with curious and patient</p>
             <div class="d-md-none">
             <h2 class="title text-center mb-2">Works</h2>
-            <ul class="text-center">
-                <li><a href="#" class="list-link">websites</a></li>
-                <li><a href="#" class="list-link">widgets</a></li>
+            <ul class="text-center | js-category">
+                <li><a href="#" class="list-link" data-type="websites" data-bs-dismiss="offcanvas" aria-label="Close">websites</a></li>
+                <li><a href="#" class="list-link" data-type="widgets" data-bs-dismiss="offcanvas" aria-label="Close">widgets</a></li>
             </ul>
         </div>
         <h2 class="title text-center mt-2">Contact</h2>
