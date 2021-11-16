@@ -49,7 +49,7 @@ let data = [
       description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, odio?",
       ghPage: "https://github.com/Joy-port/thef2e-week1",
       siteLink:"https://joy-port.github.io/thef2e-week1/",
-      img: "./assets/images/todolist.gif",
+      img: "./assets/images/taiwanTravel.png",
       like:"",
       icon:"favorite_border",
       likeNum:0
