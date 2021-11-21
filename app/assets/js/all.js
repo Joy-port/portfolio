@@ -42,18 +42,30 @@ let data = [
     icon:"favorite_border",
     likeNum:0
     },
-    {
-      date: new Date().getDate(),
-      title: "Taiwan Traveler",
-      type: "websites",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, odio?",
-      ghPage: "https://github.com/Joy-port/thef2e-week1",
-      siteLink:"https://joy-port.github.io/thef2e-week1/",
-      img: "./assets/images/taiwanTravel.png",
-      like:"",
-      icon:"favorite_border",
-      likeNum:0
-      }
+  {
+    date: new Date().getDate(),
+    title: "Taiwan Traveler",
+    type: "websites",
+    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, odio?",
+    ghPage: "https://github.com/Joy-port/thef2e-week1",
+    siteLink:"https://joy-port.github.io/thef2e-week1/",
+    img: "./assets/images/taiwanTravel.png",
+    like:"",
+    icon:"favorite_border",
+    likeNum:0
+    },
+  {
+    date: new Date().getDate(),
+    title: "Taiwan Bike",
+    type: "websites",
+    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, odio?",
+    ghPage: "https://github.com/Joy-port/thef2e-week2",
+    siteLink:"https://joy-port.github.io/thef2e-week2/",
+    img: "./assets/images/taiwanBike.png",
+    like:"",
+    icon:"favorite_border",
+    likeNum:0
+    }
 
 ];
 
