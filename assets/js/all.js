@@ -49,6 +49,17 @@ var data = [{
   like: "",
   icon: "favorite_border",
   likeNum: 0
+}, {
+  date: new Date().getDate(),
+  title: "Taiwan Bike",
+  type: "websites",
+  description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, odio?",
+  ghPage: "https://github.com/Joy-port/thef2e-week2",
+  siteLink: "https://joy-port.github.io/thef2e-week2/",
+  img: "./assets/images/taiwanBike.png",
+  like: "",
+  icon: "favorite_border",
+  likeNum: 0
 }]; //渲染畫面
 
 function update(data) {
