@@ -10,7 +10,7 @@ let data = [
     date: new Date().getDate(),
     title: "Exhibinection",
     type: "websites",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, odio?",
+    description: "為展覽架設近期相關展覽說明與內容，技術使用 html/css 與 樣板語言 ejs 做樣式管理，加上 bootstrap 5 客製化，為多頁式響應(RWD)動態網頁",
     ghPage: "https://github.com/Joy-port/week6-exhibinection",
     siteLink:"http://exhibinection.joycheng.io/",
     img: "./assets/images/exhibinection.png",
@@ -22,7 +22,7 @@ let data = [
     date: new Date().getDate(),
     title: "Doyoga",
     type: "websites",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, odio?",
+    description: "為瑜伽教室提供課程介紹、課程預約功能之網站，使用 html/css 與 樣板語言 ejs 做樣式管理，加上 bootstrap 5 客製化，為多頁式響應(RWD)動態網頁",
     ghPage: "https://github.com/Joy-port/week8-doyoga",
     siteLink:"http://doyoga.joycheng.io/",
     img: "./assets/images/doyoga.png",
@@ -34,7 +34,7 @@ let data = [
     date: new Date().getDate(),
     title: "Todolist",
     type: "widgets",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, odio?",
+    description: "可換樣式顏色的 To Do List清單",
     ghPage: "https://github.com/Joy-port/hex-todolist",
     siteLink:"https://todolist.joycheng.io/",
     img: "./assets/images/todolist.gif",
@@ -46,7 +46,7 @@ let data = [
     date: new Date().getDate(),
     title: "Taiwan Traveler",
     type: "websites",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, odio?",
+    description: "顯示台灣旅遊景點",
     ghPage: "https://github.com/Joy-port/thef2e-week1",
     siteLink:"https://joy-port.github.io/thef2e-week1/",
     img: "./assets/images/taiwanTravel.png",
@@ -58,15 +58,14 @@ let data = [
     date: new Date().getDate(),
     title: "Taiwan Bike",
     type: "websites",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, odio?",
+    description: "顯示台灣自行車景點或是附近自行車站點",
     ghPage: "https://github.com/Joy-port/thef2e-week2",
     siteLink:"https://joy-port.github.io/thef2e-week2/",
     img: "./assets/images/taiwanBike.png",
     like:"",
     icon:"favorite_border",
     likeNum:0
-    }
-
+  }
 ];
 
 //渲染畫面
