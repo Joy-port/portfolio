@@ -73,7 +73,7 @@ let data = [
     description: "使用 Vue 製作單頁式網站，搜尋台灣旅遊景點",
     ghPage: "https://github.com/Joy-port/travel-guide/",
     siteLink:"https://joy-port.github.io/travel-guide/",
-    img: "./assets/images/taiwanBike.png",
+    img: "./assets/images/travelGuide.png",
     like:"",
     icon:"favorite_border",
     likeNum:0
