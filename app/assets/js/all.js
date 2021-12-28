@@ -65,6 +65,18 @@ let data = [
     like:"",
     icon:"favorite_border",
     likeNum:0
+  },
+  {
+    date: new Date().getDate(),
+    title: "Taiwan Travel Guide",
+    type: "websites",
+    description: "使用 Vue 製作單頁式網站，搜尋台灣旅遊景點",
+    ghPage: "https://github.com/Joy-port/travel-guide/",
+    siteLink:"https://joy-port.github.io/travel-guide/",
+    img: "./assets/images/taiwanBike.png",
+    like:"",
+    icon:"favorite_border",
+    likeNum:0
   }
 ];
 
