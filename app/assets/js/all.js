@@ -8,6 +8,30 @@ const category = document.querySelectorAll('.js-category');
 let data = [
   {
     date: new Date().getDate(),
+    title: "Taiwan Bike",
+    type: "websites",
+    description: "顯示台灣自行車景點或是附近自行車站點",
+    ghPage: "https://github.com/Joy-port/thef2e-week2",
+    siteLink:"https://joy-port.github.io/thef2e-week2/",
+    img: "./assets/images/taiwanBike.png",
+    like:"",
+    icon:"favorite_border",
+    likeNum:0
+  },
+  {
+    date: new Date().getDate(),
+    title: "Taiwan Travel Guide - Vue",
+    type: "websites",
+    description: "使用 Vue Cli 製作單頁式網站，搜尋台灣旅遊景點",
+    ghPage: "https://github.com/Joy-port/travel-guide/",
+    siteLink:"https://joy-port.github.io/travel-guide/",
+    img: "./assets/images/travelGuideVue.png",
+    like:"",
+    icon:"favorite_border",
+    likeNum:0
+  },
+  {
+    date: new Date().getDate(),
     title: "Exhibinection",
     type: "websites",
     description: "為展覽架設近期相關展覽說明與內容，技術使用 html/css 與 樣板語言 ejs 做樣式管理，加上 bootstrap 5 客製化，為多頁式響應(RWD)動態網頁",
@@ -30,6 +54,18 @@ let data = [
     icon:"favorite_border",
     likeNum:0,
     },
+    {
+      date: new Date().getDate(),
+      title: "Taiwan Traveler",
+      type: "websites",
+      description: "顯示台灣旅遊景點",
+      ghPage: "https://github.com/Joy-port/thef2e-week1",
+      siteLink:"https://joy-port.github.io/thef2e-week1/",
+      img: "./assets/images/taiwanTravel.png",
+      like:"",
+      icon:"favorite_border",
+      likeNum:0
+      },
   {
     date: new Date().getDate(),
     title: "Todolist",
@@ -41,43 +77,7 @@ let data = [
     like:"",
     icon:"favorite_border",
     likeNum:0
-    },
-  {
-    date: new Date().getDate(),
-    title: "Taiwan Traveler",
-    type: "websites",
-    description: "顯示台灣旅遊景點",
-    ghPage: "https://github.com/Joy-port/thef2e-week1",
-    siteLink:"https://joy-port.github.io/thef2e-week1/",
-    img: "./assets/images/taiwanTravel.png",
-    like:"",
-    icon:"favorite_border",
-    likeNum:0
-    },
-  {
-    date: new Date().getDate(),
-    title: "Taiwan Bike",
-    type: "websites",
-    description: "顯示台灣自行車景點或是附近自行車站點",
-    ghPage: "https://github.com/Joy-port/thef2e-week2",
-    siteLink:"https://joy-port.github.io/thef2e-week2/",
-    img: "./assets/images/taiwanBike.png",
-    like:"",
-    icon:"favorite_border",
-    likeNum:0
-  },
-  {
-    date: new Date().getDate(),
-    title: "Taiwan Travel Guide",
-    type: "websites",
-    description: "使用 Vue 製作單頁式網站，搜尋台灣旅遊景點",
-    ghPage: "https://github.com/Joy-port/travel-guide/",
-    siteLink:"https://joy-port.github.io/travel-guide/",
-    img: "./assets/images/travelGuide.png",
-    like:"",
-    icon:"favorite_border",
-    likeNum:0
-  }
+    }
 ];
 
 //渲染畫面
