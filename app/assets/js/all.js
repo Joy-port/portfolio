@@ -7,10 +7,10 @@ const category = document.querySelectorAll('.js-category');
 
 let data = [
   {
-    date: new Date().getDate(),
+    date: new Date(20211110).getTime(),
     title: "Taiwan Bike",
     type: "websites",
-    description: "顯示台灣自行車景點或是附近自行車站點",
+    description: "使用 javascript 與 TDX API 資料串連，顯示台灣各地自行車景點或是附近自行車站點",
     ghPage: "https://github.com/Joy-port/thef2e-week2",
     siteLink:"https://joy-port.github.io/thef2e-week2/",
     img: "./assets/images/taiwanBike.png",
@@ -19,19 +19,19 @@ let data = [
     likeNum:0
   },
   {
-    date: new Date().getDate(),
-    title: "Taiwan Travel Guide - Vue",
+    date: new Date(20220103).getTime(),
+    title: "Taiwan Traveler",
     type: "websites",
-    description: "使用 Vue Cli 製作單頁式網站，搜尋台灣旅遊景點",
+    description: "使用 Vue Cli 製作單頁式網站，展現旅遊觀光景點",
     ghPage: "https://github.com/Joy-port/travel-guide/",
     siteLink:"https://joy-port.github.io/travel-guide/",
-    img: "./assets/images/travelGuideVue.png",
+    img: "./assets/images/taiwanTravelVue.png",
     like:"",
     icon:"favorite_border",
     likeNum:0
   },
   {
-    date: new Date().getDate(),
+    date: new Date(20210728).getTime(),
     title: "Exhibinection",
     type: "websites",
     description: "為展覽架設近期相關展覽說明與內容，技術使用 html/css 與 樣板語言 ejs 做樣式管理，加上 bootstrap 5 客製化，為多頁式響應(RWD)動態網頁",
@@ -41,9 +41,9 @@ let data = [
     like:"",
     icon:"favorite_border",
     likeNum:0
-    },
+  },
   {
-    date: new Date().getDate(),
+    date: new Date(20210828).getTime(),
     title: "Doyoga",
     type: "websites",
     description: "為瑜伽教室提供課程介紹、課程預約功能之網站，使用 html/css 與 樣板語言 ejs 做樣式管理，加上 bootstrap 5 客製化，為多頁式響應(RWD)動態網頁",
@@ -53,21 +53,21 @@ let data = [
     like:"",
     icon:"favorite_border",
     likeNum:0,
-    },
-    {
-      date: new Date().getDate(),
+  },
+  {
+      date: new Date(20211107).getTime(),
       title: "Taiwan Traveler",
       type: "websites",
-      description: "顯示台灣旅遊景點",
+      description: "展現台灣觀光旅遊景點，使用 html/css 與 樣板語言 ejs 做樣式管理，加上 bootstrap 5 客製化，為多頁式響應(RWD)靜態網頁",
       ghPage: "https://github.com/Joy-port/thef2e-week1",
       siteLink:"https://joy-port.github.io/thef2e-week1/",
       img: "./assets/images/taiwanTravel.png",
       like:"",
       icon:"favorite_border",
       likeNum:0
-      },
+  },
   {
-    date: new Date().getDate(),
+    date: new Date(20210807).getTime(),
     title: "Todolist",
     type: "widgets",
     description: "可換樣式顏色的 To Do List清單",
@@ -77,14 +77,14 @@ let data = [
     like:"",
     icon:"favorite_border",
     likeNum:0
-    }
+  }
 ];
 
 //渲染畫面
 function update(data){
   let str = '';
   data.forEach(function (item){
-    const content = ` <li class="card" data-title="${item.title}" data-date="${item.date}">
+    const content = ` <li class="card flex-grow-1" data-title="${item.title}" data-date="${item.date}">
     <div class="CTA-container | js-icon ">
         <a href="#" class="d-flex">
             <span class="material-icons-outlined card-icon ${item.like}" data-icon="like">
