@@ -8,7 +8,7 @@
 ## my works
 
 | # | Project | Description | links | Note |
-| --- | ------- | ----------- | ---- | ---- | ---- |
+| --- | ------- | ----------- | ---- | ---- |
 | 1 | Exhibition Website | using HTML / SCSS / customized Bootstrap & Gulp.js | [code](https://github.com/Joy-port/week6-exhibinection) / [demo](http://exhibinection.joycheng.io/) |  |
 | 2 | Doyoga Website | using HTML / SCSS / customized Bootstrap & Gulp.js | [code](https://github.com/Joy-port/week8-doyoga) / [demo](http://doyoga.joycheng.io/) |  |
 | 3 | Taiwan UBiker | using HTML / SCSS / customized Bootstrap / JavaScript & Gulp.js | [code](https://github.com/Joy-port/taiwan-Ubiker) / [demo](https://joy-port.github.io/taiwan-Ubiker/) |  |
