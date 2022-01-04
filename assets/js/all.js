@@ -6,7 +6,29 @@ AOS.init({
 var cardList = document.querySelector('.card-list');
 var category = document.querySelectorAll('.js-category');
 var data = [{
-  date: new Date().getDate(),
+  date: new Date(20211110).getTime(),
+  title: "Taiwan Bike",
+  type: "websites",
+  description: "使用 javascript 與 TDX API 資料串連，顯示台灣各地自行車景點或是附近自行車站點",
+  ghPage: "https://github.com/Joy-port/thef2e-week2",
+  siteLink: "https://joy-port.github.io/thef2e-week2/",
+  img: "./assets/images/taiwanBike.png",
+  like: "",
+  icon: "favorite_border",
+  likeNum: 0
+}, {
+  date: new Date(20220103).getTime(),
+  title: "Taiwan Traveler",
+  type: "websites",
+  description: "使用 Vue Cli 製作單頁式網站，展現旅遊觀光景點",
+  ghPage: "https://github.com/Joy-port/travel-guide/",
+  siteLink: "https://joy-port.github.io/travel-guide/",
+  img: "./assets/images/taiwanTravelVue.png",
+  like: "",
+  icon: "favorite_border",
+  likeNum: 0
+}, {
+  date: new Date(20210728).getTime(),
   title: "Exhibinection",
   type: "websites",
   description: "為展覽架設近期相關展覽說明與內容，技術使用 html/css 與 樣板語言 ejs 做樣式管理，加上 bootstrap 5 客製化，為多頁式響應(RWD)動態網頁",
@@ -17,7 +39,7 @@ var data = [{
   icon: "favorite_border",
   likeNum: 0
 }, {
-  date: new Date().getDate(),
+  date: new Date(20210828).getTime(),
   title: "Doyoga",
   type: "websites",
   description: "為瑜伽教室提供課程介紹、課程預約功能之網站，使用 html/css 與 樣板語言 ejs 做樣式管理，加上 bootstrap 5 客製化，為多頁式響應(RWD)動態網頁",
@@ -28,7 +50,18 @@ var data = [{
   icon: "favorite_border",
   likeNum: 0
 }, {
-  date: new Date().getDate(),
+  date: new Date(20211107).getTime(),
+  title: "Taiwan Traveler",
+  type: "websites",
+  description: "展現台灣觀光旅遊景點，使用 html/css 與 樣板語言 ejs 做樣式管理，加上 bootstrap 5 客製化，為多頁式響應(RWD)靜態網頁",
+  ghPage: "https://github.com/Joy-port/thef2e-week1",
+  siteLink: "https://joy-port.github.io/thef2e-week1/",
+  img: "./assets/images/taiwanTravel.png",
+  like: "",
+  icon: "favorite_border",
+  likeNum: 0
+}, {
+  date: new Date(20210807).getTime(),
   title: "Todolist",
   type: "widgets",
   description: "可換樣式顏色的 To Do List清單",
@@ -38,34 +71,12 @@ var data = [{
   like: "",
   icon: "favorite_border",
   likeNum: 0
-}, {
-  date: new Date().getDate(),
-  title: "Taiwan Traveler",
-  type: "websites",
-  description: "顯示台灣旅遊景點",
-  ghPage: "https://github.com/Joy-port/thef2e-week1",
-  siteLink: "https://joy-port.github.io/thef2e-week1/",
-  img: "./assets/images/taiwanTravel.png",
-  like: "",
-  icon: "favorite_border",
-  likeNum: 0
-}, {
-  date: new Date().getDate(),
-  title: "Taiwan Bike",
-  type: "websites",
-  description: "顯示台灣自行車景點或是附近自行車站點",
-  ghPage: "https://github.com/Joy-port/thef2e-week2",
-  siteLink: "https://joy-port.github.io/thef2e-week2/",
-  img: "./assets/images/taiwanBike.png",
-  like: "",
-  icon: "favorite_border",
-  likeNum: 0
 }]; //渲染畫面
 
 function update(data) {
   var str = '';
   data.forEach(function (item) {
-    var content = " <li class=\"card\" data-title=\"".concat(item.title, "\" data-date=\"").concat(item.date, "\">\n    <div class=\"CTA-container | js-icon \">\n        <a href=\"#\" class=\"d-flex\">\n            <span class=\"material-icons-outlined card-icon ").concat(item.like, "\" data-icon=\"like\">\n                ").concat(item.icon, "\n            </span>\n        </a>\n        <a href=\"").concat(item.ghPage, "\" class=\"d-flex\">\n            <span class=\"material-icons-outlined card-icon\" data-icon=\"ghPage\">\n                share\n            </span>\n        </a>\n    </div>\n    <img class=\"card-img-top card-img\" src=\"").concat(item.img, "\" alt=\"website img\">\n    <div class=\"card-body\" >\n        <a href=\"").concat(item.siteLink, "\" class=\"card-title stretched-link\" target=\"_blank\">").concat(item.title, "</a>\n        <div class=\"card-subtitle\">").concat(item.type, "</div>\n        <p class=\"card-content\"> ").concat(item.description, "</p>\n    </div>\n</li>");
+    var content = " <li class=\"card flex-grow-1\" data-title=\"".concat(item.title, "\" data-date=\"").concat(item.date, "\">\n    <div class=\"CTA-container | js-icon \">\n        <a href=\"#\" class=\"d-flex\">\n            <span class=\"material-icons-outlined card-icon ").concat(item.like, "\" data-icon=\"like\">\n                ").concat(item.icon, "\n            </span>\n        </a>\n        <a href=\"").concat(item.ghPage, "\" class=\"d-flex\">\n            <span class=\"material-icons-outlined card-icon\" data-icon=\"ghPage\">\n                share\n            </span>\n        </a>\n    </div>\n    <img class=\"card-img-top card-img\" src=\"").concat(item.img, "\" alt=\"website img\">\n    <div class=\"card-body\" >\n        <a href=\"").concat(item.siteLink, "\" class=\"card-title stretched-link\" target=\"_blank\">").concat(item.title, "</a>\n        <div class=\"card-subtitle\">").concat(item.type, "</div>\n        <p class=\"card-content\"> ").concat(item.description, "</p>\n    </div>\n</li>");
     str += content;
   });
   cardList.innerHTML = str;
